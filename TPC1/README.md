@@ -4,3 +4,4 @@ https://github.com/inesm-vieira/ATP2025/blob/65ab8d61cb42b8c498acdf8317cf6ac9750
 
 EX2:Comboio_Turtle10_BlocklyGames
 https://github.com/inesm-vieira/ATP2025/blob/eaad418edd8362a9e73a75795afe87335020c15f/Comboio1.1.png
+https://github.com/inesm-vieira/ATP2025/blob/6bbb5c3bf4263a17f76467c55b9b2a858483c349/Comboio1.2.png
