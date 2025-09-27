@@ -5,7 +5,9 @@ Jogo dos 21 fósforos:
 
 
 import random
+
 def jogo():
+
     jogador=input("Deseja jogar em primeiro ou em segundo lugar? ")
     p=1                #variavel que me permite verificar se no segundo caso o jogador ganha ou perde
 
