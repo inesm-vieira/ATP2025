@@ -7,10 +7,8 @@ Jogo dos 21 fósforos:
 import random
 
 def jogo():
-
     jogador=input("Deseja jogar em primeiro ou em segundo lugar? ")
-    p=1                #variavel que me permite verificar se no segundo caso o jogador ganha ou perde
-
+    p=1               
     if jogador=="primeiro":
         cc=21
         while cc>1:
@@ -27,7 +25,7 @@ def jogo():
 
     elif jogador=="segundo":
         cc=21
-        x=random.randint(1 , 4)              #para gerar um número aleatório
+        x=random.randint(1 , 4)             
         print(f"O número de fósforos é: {cc} eu retiro {x}")
         cc=cc-x
         while cc>1:
