@@ -3,10 +3,9 @@ Inês Maria Moreira Vieira, A111979
 
 Jogo dos 21 fósforos:
 
+
 import random
-
 def jogo():
-
     jogador=input("Deseja jogar em primeiro ou em segundo lugar? ")
     p=1                #variavel que me permite verificar se no segundo caso o jogador ganha ou perde
 
@@ -55,7 +54,6 @@ def jogo():
             print ("Ganhaste")
     else:
         print("Jogada inválida")
-
 jogo()
 
 
