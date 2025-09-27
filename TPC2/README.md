@@ -1,12 +1,20 @@
 https://github.com/inesm-vieira/ATP2025/blob/83a1998e1996af5ecfcf711474076f0c03c5ddfd/Captura%20de%20ecr%C3%A3%202025-09-24%20210553.png
+
 Inês Maria Moreira Vieira, A111979
 
 Jogo dos 21 fósforos:
 
+Este código permite ao jogador escolher se pretende jogar em primeiro ou segundo lugar e, em cada ronda, permite escolher retirar de 1 a 4 fósforos.
 
+O objetivo é evitar ficar com o último fósforo.
+
+O código está dividido em dois casos, quando o jogador decide jogar em primeiro, o computador ganha sem dar a chance ao jogador de ganhar, e quando o jogador escolhe jogar em segundo. Este último caso é mais complexo, o computador só ganha se o jogador cometer um erro.
+
+```python
 import random
 
 def jogo():
+
     jogador=input("Deseja jogar em primeiro ou em segundo lugar? ")
     p=1               
     if jogador=="primeiro":
@@ -55,5 +63,5 @@ def jogo():
     else:
         print("Jogada inválida")
 jogo()
-
+```
 
