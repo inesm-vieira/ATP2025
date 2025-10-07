@@ -1,5 +1,10 @@
 https://github.com/inesm-vieira/ATP2025/blob/83a1998e1996af5ecfcf711474076f0c03c5ddfd/Captura%20de%20ecr%C3%A3%202025-09-24%20210553.png
+
 Inês Maria Moreira Vieira, A111979
+
+
+Com este programa podemos criar, ler e analisar listas de números inteiros.
+O utilizador pode, através de um menu, escolher gerar listas aleatórias ou introduzi-las manualmente, calcular a soma,  a média, o maior e menor número, verificar se a lista está ordenada de forma crescente ou decrescente e procurar a posição de um elemento específico, caso este faça parte da lista.
 
 
 ```python
