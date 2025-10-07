@@ -2,7 +2,7 @@ https://github.com/inesm-vieira/ATP2025/blob/83a1998e1996af5ecfcf711474076f0c03c
 Inês Maria Moreira Vieira, A111979
 
 
-python"""
+```python
 import random
 
 menu="""
@@ -169,4 +169,4 @@ while op!="0":
 if op=="0":
         print("Até à próxima!")
 
-        """
+```
