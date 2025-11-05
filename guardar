@@ -1,0 +1,85 @@
+
+#TPC1
+#-------------------
+
+print("TPC1")
+#a)
+lista1 = [1, 2, 3, 4, 5]
+lista2 = [4, 5, 6, 7, 8]
+
+ncomuns = [x for x in lista1 if x not in lista2] + [x for x in lista2 if x not in lista1]
+print(ncomuns)
+# [1, 2, 3, 6, 7, 8]
+
+#b)
+texto = """Vivia há já não poucos anos algures num concelho do Ribatejo 
+    um pequeno lavrador e negociante de gado chamado Manuel Peres Vigário"""
+
+lista = [palavra for palavra in texto.split() if len(palavra) > 3]
+print(lista)
+# ['Vivia', 'poucos', 'anos', 'algures', 'concelho', 'concelho', 'Ribatejo', 'pequeno', 'lavrador', 'negociante', 'gado', 'chamado', 'Manuel', 'Vigário']
+
+#c)
+lista = ['anaconda', 'burro', 'cavalo', 'macaco']
+listaRes = [(i+1, valor) for i, valor in enumerate(lista)]
+print(listaRes)
+# [(1,'anaconda'), (2,'burro'), (3,'cavalo'), (4,'macaco')]
+
+
+#TPC2
+#----------------------
+
+print(" ")
+print("TPC2")
+#a)
+def strCount(s, subs):
+    count = 0
+    i = 0
+    while i <= len(s) - len(subs):
+        if s[i:i+len(subs)] == subs:
+            count += 1
+            i += len(subs)
+        else:
+            i += 1
+    return count
+print(f"a) Ex1: {strCount("catcowcat", "cat")}")
+print(f"   Ex2: {strCount("catcowcat", "cow")}")
+print(f"   Ex3: {strCount("catcowcat", "dog")}")
+
+# Exemplos:
+# strCount("catcowcat", "cat") → 2
+# strCount("catcowcat", "cow") → 1
+# strCount("catcowcat", "dog") → 0
+
+
+#b)
+def produtoM3(lista):
+    lista_ordenada = sorted(lista)
+    return lista_ordenada[0] * lista_ordenada[1] * lista_ordenada[2]
+
+print(f"b) {produtoM3([12,3,7,10,12,8,9])}")
+# produtoM3([12,3,7,10,12,8,9]) → 168
+
+
+#c)
+def reduxInt(n):
+    while n >= 10:
+        n = sum(int(dig) for dig in str(n))
+    return n
+
+print(f"c) Ex1: {reduxInt(38)} | Ex2: {reduxInt(777)}")
+# reduxInt(38) → 2
+# reduxInt(777) → 3
+
+
+#d)
+def myIndexOf(s1, s2):
+    for i in range(len(s1) - len(s2) + 1):
+        if s1[i:i+len(s2)] == s2:
+            return i
+    return -1
+
+print(f"d) Ex1: {myIndexOf("Hoje está um belo dia de sol!", "belo")}")
+print(f"   Ex2: {myIndexOf("Hoje está um belo dia de sol!", "chuva")}")
+# myIndexOf("Hoje está um belo dia de sol!", "belo") → 13
+# myIndexOf("Hoje está um belo dia de sol!", "chuva") → -1
