@@ -92,6 +92,8 @@ print(f"   Ex2: {myIndexOf("Hoje está um belo dia de sol!", "chuva")}")
 
 ```
 
+Resolução TPC3
+
 ```python
 MyFaceBook = [
     {
@@ -210,7 +212,9 @@ Menu
             mostrarPosts(postsAutor(MyFaceBook, autor))
 
         elif op == '4':
-            print("Autores registados:", ", ".join(autores(MyFaceBook)))
+            print("Autores registados:")
+            for autor in autores(MyFaceBook):
+                print(" -", autor)
 
         elif op == '5':
             conteudo = input("Conteúdo do post: ")
